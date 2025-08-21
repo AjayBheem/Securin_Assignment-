@@ -1,0 +1,23 @@
+# Suggested Git Commit History for GitHub Submission
+
+# Run these commands inside the project root after unzipping.
+
+git init
+git branch -M main
+git add .
+git commit -m "Initial commit: project setup"
+
+git add sql/schema.sql
+git commit -m "Add PostgreSQL schema and indexes"
+
+git add backend/scripts/import_recipes.js backend/US_recipes.json
+git commit -m "Add importer script and dataset integration"
+
+git add backend/src frontend/src
+git commit -m "Implement backend API and React frontend"
+
+git add docker-compose.yml backend/Dockerfile frontend/Dockerfile
+git commit -m "Add Docker support for backend, frontend, and Postgres"
+
+git remote add origin https://github.com/YOUR-USERNAME/securin-recipe-app.git
+git push -u origin main
